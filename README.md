@@ -22,3 +22,12 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
 -   Another VDOM is the dom which contains the new changes, updated state variables values.
 -   Now these two virtual DOMs will get compared with each other and will check for the new changes this complete procedure is known as **diffing algorithm.**
 -   Now the new changes will be updated in your Real DOM, this procedure is known as **Recoinciliation** This makes a big difference! React can update only the necessary parts of the DOM. React’s reputation for performance comes largely from this innovation.
+
+### Q3. What is difference between class and functional component?
+
+|Function-Based Components | Class-Based Components|
+|------|------|
+|Functional components is a plain JavaScript, you do not have a choice to set the state in functional component.| Class components we have a feature to set the set state in component|
+|There is no render function we are using in functional components.| In class components, we have a render function which is use to return the react elements.|
+|Function components only accept the props as an arguments.| In class componsnts, we have a render function which is use to return the react elements.|
+|Functional components are somethimes called stateless components.| Class components are sometimes called stateful components.|
