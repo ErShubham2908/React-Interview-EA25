@@ -58,3 +58,17 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
 |Use to build web application | use to build cross-plateform mobile application.|
 |V-DOM render data on browser | Native API for mobile components rendering|
 |create robust animation using CSS | Need to use API for create animation |
+
+### H/W Q7. Difference b/w Stateful and stateless Component?
+
+| Statfull| Stateless |
+|----| ----- |
+
+### Q8. What do you know about NPM?
+- NPM (Node Package Manager) is the default package manager for Node.js, a popular runtime environment for executing JavaScript code outside of web browsers. It is a fundamental tool in the JavaScript ecosystem and plays a crucial role in managing packages and dependencies for Node.js applications. Here is an overview of what NPM is and what it's used for:
+  1. Package Management
+  2. Dependency Management
+  3. Command-Line Interface (CLI)
+  4. Scripts
+  5. Security
+  6. Open Source and Community
