@@ -31,3 +31,13 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
 |There is no render function we are using in functional components.| In class components, we have a render function which is use to return the react elements.|
 |Function components only accept the props as an arguments.| In class componsnts, we have a render function which is use to return the react elements.|
 |Functional components are somethimes called stateless components.| Class components are sometimes called stateful components.|
+
+
+### H/W - Difference between Props and State?
+
+### Q4. What is package.json?
+1. The package.json file is a crucial part of any Node.js project, including React applications. It's a JSON (JavaScript Object Notation) file that serves as a manifest for your project. In the context of React, it specifies the project's metadata and its dependencies.
+   1. Name and Version:
+   2. Dependencies:
+   3. Scripts:
+   4. DevDependencies:
