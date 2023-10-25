@@ -41,3 +41,20 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
    2. Dependencies:
    3. Scripts:
    4. DevDependencies:
+
+### Q5. What is JSX and why do we use it instead of js?
+- JSX, which stands for JavaScript XML, is a syntax extension for JavaScript that is commonly used in React applications. It allows you to write HTML-like code within your JavaScript code. JSX provides several benefits for building user interfaces, and here's why we use it instead of plain JavaScript:
+    1. Declarative Syntax
+    2. Readability
+    3. Component Composition
+    4. Performance Optimization
+    5. Ecosystem Support
+
+### Q. 6 What is the Difference between react and react native? Which one is library or framework?
+
+|React JS | React-Native|
+|---- | ----|
+|JS Library | Mobile Framework|
+|Use to build web application | use to build cross-plateform mobile application.|
+|V-DOM render data on browser | Native API for mobile components rendering|
+|create robust animation using CSS | Need to use API for create animation |
