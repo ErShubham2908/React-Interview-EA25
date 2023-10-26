@@ -94,3 +94,4 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
   - onKeyPress: Fired when the user presses a key on the keyboard.
   - onMouseOver: Fired when the user moves the mouse cursor over an element.
   - onMouseOut: Fired when the user moves the mouse cursor away from an element.
+
