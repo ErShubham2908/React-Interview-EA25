@@ -118,4 +118,4 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
   - Suspense - 
   - Lazy - import from 'react'
 
-### Q7. Difference between Axios and fetch?
+### Q7. H/W Difference between Axios and fetch?
