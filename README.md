@@ -95,3 +95,27 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
   - onMouseOver: Fired when the user moves the mouse cursor over an element.
   - onMouseOut: Fired when the user moves the mouse cursor away from an element.
 
+### Q2. What is the package name you are using for routing?
+- Name of the packege is React Router DOM.
+- install => npm install / i react-router-dom
+
+### Q3. Implement Routes with Components name ?
+- Home
+- Student
+  - implement dynamic route in student
+- Contact
+- About
+
+### Q6. What is lazy loading in react ?
+- Lazy loading is a technique in web development that involves loading specific parts of a web application only when they are needed. In the context of React.js, it allows you to load components, modules, or assets asynchronously and on-demand, improving the initial load time and overall performance of your application.
+- Why Use Lazy Loading in React?
+  - Improves initial page load time.
+  - Reduces the size of the initial bundle.
+  - Enhances user experience by loading resources on-demand.
+  - Optimizes performance for large applications.
+
+- Component used in lazyloading
+  - Suspense - 
+  - Lazy - import from 'react'
+
+### Q7. Difference between Axios and fetch?
