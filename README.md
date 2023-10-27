@@ -119,3 +119,19 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
   - Lazy - import from 'react'
 
 ### Q7. H/W Difference between Axios and fetch?
+|Axios | Fetch | 
+|----- | ------- | 
+|3rd Prty Library | JavaScript Method | 
+|Automatically transform Data | Have to manually transform data | 
+|Has to be compiled | can be read directly by browsers | 
+|Need to install externally | No need to install |
+
+# Day - 3
+
+### Q1. What is Props Drilling Concept ?What is State Uplifting?
+- **Prop Drilling**: Prop drilling, also known as "prop passing," is a common issue in React applications. It occurs when you need to pass data through multiple levels of nested components, even if some of the intermediary components don't use that data. It can make your code less maintainable and harder to understand.
+- **State Lifting**: State lifting is the process of moving state up the component hierarchy to a common ancestor or a higher-level component where it can be shared by multiple child components that need access to the same data. This makes it easier to manage and update the shared state.
+- Benefits of State Lifting:
+  - Simplified Code: State lifting reduces redundancy in your code and makes it easier to manage, as you don't have to pass props through many levels of components.
+  - Improved Performance: Avoiding prop drilling can improve the performance of your application, as React doesn't need to re-render components unnecessarily.
+  - Easier Maintenance: When you need to modify the state or data, you only need to do it in one place (the common ancestor) rather than making changes in multiple child components.
