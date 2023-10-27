@@ -157,4 +157,3 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
   - useEffect takes two arguments: a function and an array of dependencies.
   - The function inside useEffect is where you place your side effect code.
   - The dependencies array is optional. If provided, the effect will only be re-run when the values in this array change. 
-- 

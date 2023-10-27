@@ -9,6 +9,7 @@ import StateUp from './Day 3/Uplifting/StateUp';
 import APIData from './Day 3/Axios/APIData';
 import StoreCompo from './Day 3/Context/StoreCompo';
 import UseState from './Day 3/Hooks/UseState';
+import UseEffect from './Day 3/Hooks/UseEffect';
 
 function App() {
   const [data, setData] = useState('Hi....')
@@ -24,7 +25,8 @@ function App() {
       {/* <StateUp /> */}
       {/* <APIData /> */}
       {/* <StoreCompo /> */}
-      <UseState />
+      {/* <UseState /> */}
+      <UseEffect />
     </div>
   );
 }
