@@ -157,3 +157,9 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
   - useEffect takes two arguments: a function and an array of dependencies.
   - The function inside useEffect is where you place your side effect code.
   - The dependencies array is optional. If provided, the effect will only be re-run when the values in this array change. 
+
+### Q6. Do you know about SEO ? Is it true that react js supports SEO support?
+- Search Engine Optimization (SEO) is a set of techniques and strategies used to improve a website's visibility in search engine results. The primary goal of SEO is to attract organic (non-paid) traffic to a website and increase its ranking in search engine results pages (SERPs).
+- is it true that react js support SEO 
+  - React.js, a popular JavaScript library for building user interfaces, was once criticized for its initial lack of SEO support because it primarily renders content on the client-side. However, there have been significant improvements in making React applications more SEO-friendly.
+  - React applications can implement Server-Side Rendering (SSR) to improve SEO. SSR pre-renders React components on the server and sends the fully rendered HTML to the client. This allows search engines to crawl and index the content.

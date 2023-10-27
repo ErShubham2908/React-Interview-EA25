@@ -15,11 +15,15 @@ function UseEffect() {
         window.addEventListener('mousemove', mouseMoving);
         console.log('Hi.......');
         console.log(mouseCod.x, mouseCod.y);
+
+        // return(()=> {
+        //     window.removeEventListener('mousemove', mouseMoving)
+        // })
     },[mouseCod])
 
-    useEffect(() => {
-        console.log(data);
-    }, [data])
+    // useEffect(() => {
+    //     console.log(data);
+    // }, [data])
   return (
     <>
         <h4>X : {mouseCod.x},  Y : {mouseCod.y}</h4>
