@@ -135,3 +135,13 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
   - Simplified Code: State lifting reduces redundancy in your code and makes it easier to manage, as you don't have to pass props through many levels of components.
   - Improved Performance: Avoiding prop drilling can improve the performance of your application, as React doesn't need to re-render components unnecessarily.
   - Easier Maintenance: When you need to modify the state or data, you only need to do it in one place (the common ancestor) rather than making changes in multiple child components.
+
+### Q2. Fetch API data using Axios?
+
+### Q3. Context API?
+- The Context API is a powerful feature in React that allows you to manage and share state data between components without having to pass props down through every level of your component tree. It's especially useful for scenarios where multiple components need access to the same data.
+- Context API is a built-in feature in React that provides a way to pass data through the component tree without having to pass props manually at every level. It allows you to share data between components, such as theme information, user authentication, or any other global data.
+- **When to Use Context API?**
+  - You should consider using the Context API when you have data that needs to be accessed by multiple components at different levels of the component tree. It simplifies data sharing and avoids "prop drilling."
+    - A Provider component is used to wrap the part of your component tree where you want to share data. It accepts a value prop, which will provide the shared data to its child components.
+    -  you can use the useContext hook to access the context data more conveniently.
