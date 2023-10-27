@@ -7,6 +7,8 @@ import Parent from './Day 2/Props/Parent';
 import RoutesCompo from './Day 2/Route/RoutesCompo';
 import StateUp from './Day 3/Uplifting/StateUp';
 import APIData from './Day 3/Axios/APIData';
+import StoreCompo from './Day 3/Context/StoreCompo';
+import UseState from './Day 3/Hooks/UseState';
 
 function App() {
   const [data, setData] = useState('Hi....')
@@ -20,7 +22,9 @@ function App() {
       {/* <Compo /> */}
       {/* <CompoLazy value = {data} /> */}
       {/* <StateUp /> */}
-      <APIData />
+      {/* <APIData /> */}
+      {/* <StoreCompo /> */}
+      <UseState />
     </div>
   );
 }

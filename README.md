@@ -145,3 +145,16 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
   - You should consider using the Context API when you have data that needs to be accessed by multiple components at different levels of the component tree. It simplifies data sharing and avoids "prop drilling."
     - A Provider component is used to wrap the part of your component tree where you want to share data. It accepts a value prop, which will provide the shared data to its child components.
     -  you can use the useContext hook to access the context data more conveniently.
+
+### Q4. What is UseState Hook ?(Implementation)
+- useState is a built-in hook in React.js that allows you to add state to functional components. State is a way to store and manage data that can change over time, and it's a crucial concept in React as it enables your components to re-render when the state changes. With useState, you can create and manage state variables within your functional components.
+- S : 
+  - const [state variable name, state function name] = useState(default value of state variable)
+
+### Q5. What is useEffect Hook ?(Implementation)
+- useEffect is a built-in hook in React that allows you to perform side effects in functional components. Side effects typically involve tasks such as data fetching, DOM manipulation, or subscribing to external events. useEffect is a critical part of React because it helps you manage the side effects of your components.
+- **useEffect** : 
+  - useEffect takes two arguments: a function and an array of dependencies.
+  - The function inside useEffect is where you place your side effect code.
+  - The dependencies array is optional. If provided, the effect will only be re-run when the values in this array change. 
+- 
