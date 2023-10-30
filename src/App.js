@@ -11,6 +11,7 @@ import StoreCompo from './Day 3/Context/StoreCompo';
 import UseState from './Day 3/Hooks/UseState';
 import UseEffect from './Day 3/Hooks/UseEffect';
 import Parent from './Day 3/Hooks/UseCallBack/Parent';
+import UseRefCompo from './Day 3/Hooks/UseRefCompo';
 
 function App() {
   const [data, setData] = useState('Hi....')
@@ -28,7 +29,8 @@ function App() {
       {/* <StoreCompo /> */}
       {/* <UseState /> */}
       {/* <UseEffect /> */}
-      <Parent />
+      {/* <Parent /> */}
+      <UseRefCompo />
     </div>
   );
 }

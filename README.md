@@ -191,4 +191,12 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
 - **When to Use Keys**
   - When rendering dynamic lists or arrays in React components.
   - When dealing with lists that may change over time, such as when items are added, removed, or reordered.
-  - 
+
+### Q4. What is UseRef Hook ?
+- The useRef hook is a powerful  tool in React.js that allows you to create and manage references to DOM elements or any mutable values in a functional component. It is especially useful for accessing, interacting with, and tracking changes to DOM elements, implementing animations, and more.
+- **Use Cases:**
+  - Managing DOM elements.
+  - Implementing animations and transitions.
+  - Storing and accessing previous state values.
+  - Integrating with third-party libraries.
+
