@@ -175,3 +175,15 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
 - **Difference between callback and useCallback** - 
   - The main difference between a callback and a useCallback hook is that a callback is simply a function that is passed as an argument to another function, while useCallback is a React Hook that returns a memoized callback function. This means that a callback can be any function, while a useCallback hook can only be used to memoize a callback function.
   - Another difference is that a callback is typically used to handle events or to pass data between components, while useCallback is typically used to prevent child components from re-rendering unnecessarily.
+
+
+### Q3. Why do we need keys in react less?
+- In React, keys are special attributes that provide a way to identify and differentiate between elements in a list. Each element in an array should have a unique key. React uses keys to efficiently update the user interface by identifying which elements have changed or been added/removed when rendering lists.
+- **The Problem Without Keys**
+  - Without keys, when React re-renders a list, it has no way to determine which elements have changed or where new items have been inserted. This can lead to unexpected and incorrect behavior.
+- **The Solution with Keys**
+  - By providing unique keys to elements in a list, React can accurately track changes. When React re-renders a list, it will compare the keys of the new elements to the previous ones, allowing it to update, reorder, or remove elements effectively.
+- **When to Use Keys**
+  - When rendering dynamic lists or arrays in React components.
+  - When dealing with lists that may change over time, such as when items are added, removed, or reordered.
+  - 
