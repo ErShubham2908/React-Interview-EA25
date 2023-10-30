@@ -176,6 +176,11 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
   - The main difference between a callback and a useCallback hook is that a callback is simply a function that is passed as an argument to another function, while useCallback is a React Hook that returns a memoized callback function. This means that a callback can be any function, while a useCallback hook can only be used to memoize a callback function.
   - Another difference is that a callback is typically used to handle events or to pass data between components, while useCallback is typically used to prevent child components from re-rendering unnecessarily.
 
+### Q2. What is useMemo Hooks?
+- - useMemo is one of the built-in hooks in React that allows you to optimize the performance of your application by memoizing the results of expensive function calls. It is particularly useful when you have a function that computes a value, and you want to cache and reuse that value unless some dependencies change. This can help reduce unnecessary recalculations, especially when dealing with computationally intensive tasks or rendering components.
+- **The useMemo hook takes two arguments:**
+    1. A function that computes the memoized value.
+    2. An array of dependencies. These dependencies determine when the memoized value should be recalculated. If any of the dependencies change, the memoized value will be recalculated; otherwise, it will be reused.
 
 ### Q3. Why do we need keys in react less?
 - In React, keys are special attributes that provide a way to identify and differentiate between elements in a list. Each element in an array should have a unique key. React uses keys to efficiently update the user interface by identifying which elements have changed or been added/removed when rendering lists.
