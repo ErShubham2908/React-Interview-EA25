@@ -200,3 +200,38 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
   - Storing and accessing previous state values.
   - Integrating with third-party libraries.
 
+### Q5. What is UseReducer Hook ?(Implementation)
+- The useReducer hook is a built-in hook in React that is used for managing more complex state logic in functional components. It is often an alternative to the useState hook when you need to handle state changes in a more structured and predictable way. useReducer follows the principles of the Redux library and can help you manage state in a more predictable and centralized manner.
+- **When to Use useReducer?**
+  - Use useReducer when you have complex state logic that involves multiple sub-values, or when the next state depends on the previous state.
+  - It is a good choice when your state transitions are not simple and straightforward.
+  - It can be beneficial in scenarios where you need to pass down state management to child components.
+  - Use it when you want to centralize your state logic and maintain a single source of truth.
+
+- **Basic Syntax**
+```javascript
+const [state, dispatch] = useReducer(reducer, initialState);
+const [state, dispatch - setState] = useReducer((logic, action), 0)
+const [count, setCount] = useState(0);
+
+```
+  - **state**: The current state.
+  - **dispatch**: A function used to dispatch actions to update the state.
+  - **reducer**: A function that specifies how the state should be updated.
+  - **initialState**: The initial state value.
+
+### Q6. Difference between useEffect and useContext ?
+- **useEffect** is a React Hook that allows you to perform side effects in your functional components. Side effects typically include data fetching, DOM manipulation, or setting up subscriptions.
+  - The first argument to useEffect is a function that contains the code to execute when the component renders.
+  - The second argument is an array of dependencies. When any of the dependencies change, the effect will run again.
+- **useContext** is a React Hook used for accessing and consuming a Context object. Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+- **Key Differences**:
+  - useEffect is used for managing side effects within a component, while useContext is used for consuming context data provided by a parent component.
+  - useEffect takes two arguments: a function with side effects and an array of dependencies to control when the effect runs. useContext takes a single argument, the Context object, and returns the current context value.
+  - useEffect is primarily used for managing asynchronous operations and side effects, while useContext is used for sharing data (such as global state) across components.
+
+|useEffect Hooks | useContext Hooks|
+|------| -------| 
+|useEffect is used for managing side effects within a component. | useContext is used for consuming context data provided by a parent component.|
+|useEffect takes two arguments: a function with side effects and an array of dependencies to control when the effect runs. | useContext takes a single argument, the Context object, and returns the current context value.|
+|useEffect is primarily used for managing asynchronous operations and side effects. | useContext is used for sharing data (such as global state) across components.|
