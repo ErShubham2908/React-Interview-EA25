@@ -163,3 +163,15 @@ DOM manipulation is the heart of the modern, interactive web. Unfortunately, it 
 - is it true that react js support SEO 
   - React.js, a popular JavaScript library for building user interfaces, was once criticized for its initial lack of SEO support because it primarily renders content on the client-side. However, there have been significant improvements in making React applications more SEO-friendly.
   - React applications can implement Server-Side Rendering (SSR) to improve SEO. SSR pre-renders React components on the server and sends the fully rendered HTML to the client. This allows search engines to crawl and index the content.
+
+
+## Day - 4
+
+### Q1. Difference between callback and useCallback Hook?
+- A callback function in JavaScript is a function that is passed as an argument to another function and is executed after the completion of that function. Callbacks are commonly used in asynchronous operations, event handling, and other scenarios where you want to specify what should happen after a certain task is done.
+- The useCallback hook is part of React, a popular JavaScript library for building user interfaces. It is used to memoize functions and optimize performance in React components.
+- The primary purpose of useCallback is to avoid unnecessary re-rendering of child components in React when a parent component re-renders. It takes a function and an array of dependencies as arguments, and it returns a memoized version of the function. This memoized function remains the same between renders unless one of the dependencies has changed.
+- useCallback is a React Hook that returns a memoized callback function. Memoization is a technique for caching the results of a function so that they can be reused later without having to recalculate them. This can improve performance, especially when the function is expensive to compute.
+- **Difference between callback and useCallback** - 
+  - The main difference between a callback and a useCallback hook is that a callback is simply a function that is passed as an argument to another function, while useCallback is a React Hook that returns a memoized callback function. This means that a callback can be any function, while a useCallback hook can only be used to memoize a callback function.
+  - Another difference is that a callback is typically used to handle events or to pass data between components, while useCallback is typically used to prevent child components from re-rendering unnecessarily.
