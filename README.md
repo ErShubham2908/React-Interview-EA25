@@ -238,3 +238,13 @@ const [count, setCount] = useState(0);
 
 ## Day - 5
 
+### Q1. High Order Component in react js? 
+- A Higher-Order Component is a function that takes a component and returns a new component with additional props and behavior. In other words, it's a way to wrap a component with some logic to enhance or modify its functionality.
+- Higher-order components (HOCs) are a powerful feature of React that allow you to reuse component logic across multiple components. A HOC is a function that takes a component as an argument and returns a new component that wraps the original component. The new component can add additional functionality to the original component without modifying its code.
+- **Why use HOCs in React?**
+  - HOCs provide a way to reuse component logic and share code between different parts of your application. They help in abstracting complex logic and make components more focused on their main task. 
+  - **Some common use cases for HOCs include:** 
+    - **Code Reuse:** HOCs allow you to extract and reuse common code, such as data fetching or authentication logic, across multiple components.
+    - **Props Manipulation:** You can add, modify, or filter props passed to a component.
+    - **State Management:** HOCs can manage and pass down state to the wrapped components.
+    - **Conditional Rendering:** You can control when and how a component renders based on certain conditions.

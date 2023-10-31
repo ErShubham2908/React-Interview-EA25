@@ -13,6 +13,8 @@ import UseEffect from './Day 3/Hooks/UseEffect';
 import Parent from './Day 3/Hooks/UseCallBack/Parent';
 import UseRefCompo from './Day 3/Hooks/UseRefCompo';
 import UseReducerCompo from './Day 3/Hooks/UseReducerCompo';
+import Opponent2 from './Day 5/HOC/Oppeoent2';
+import Opponent1 from './Day 5/HOC/Opponent1';
 
 function App() {
   const [data, setData] = useState('Hi....')
@@ -32,7 +34,9 @@ function App() {
       {/* <UseEffect /> */}
       {/* <Parent /> */}
       {/* <UseRefCompo /> */}
-      <UseReducerCompo />
+      {/* <UseReducerCompo /> */}
+      <Opponent2 />
+      <Opponent1 />
     </div>
   );
 }
