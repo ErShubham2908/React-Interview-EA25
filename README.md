@@ -248,3 +248,29 @@ const [count, setCount] = useState(0);
     - **Props Manipulation:** You can add, modify, or filter props passed to a component.
     - **State Management:** HOCs can manage and pass down state to the wrapped components.
     - **Conditional Rendering:** You can control when and how a component renders based on certain conditions.
+
+### Q2. What are React Life cycles Explain each one with Example?
+- **Mounting:** 
+  - **constructor()**
+    - The constructor is called when an instance of a component is being created and initialized.
+    - It's used to set the initial state to the component.
+  - **Super()**
+    - The super() keyword in React is used to call the constructor of the parent class. This is required when you need to access some variables from the parent class. The reason why this cannot be allowed before super() is because this is uninitialized if super() is not called.
+  - **render()**
+    - The render method returns the JSX to be displayed on the screen.
+    - It must be a pure function, meaning it should not have side effects.
+  - **componentDidMount()**
+    - This method is called after the component is rendered on the screen.
+    - It's often used to perform tasks like making API requests or setting up subscriptions.
+- **Updating**
+  - **componentDidUpdate(prevProps, prevState)**
+    - This method is called after the component is updated.
+    - It's useful for reacting to changes in props or state.
+    - Be careful not to create infinite loops by updating state within this method.
+- **Unmounting**
+  - **componentWillUnmount()**
+    - This method is called just before the component is removed from the DOM.
+    - It's used to clean up resources like subscriptions and timers.
+
+- **this** 
+  - The this keyword in React refers to the current instance of a component class. It allows you to access the component's props, state, and methods within its class definition.

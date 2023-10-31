@@ -9,7 +9,7 @@ const HOC = (BiddingData) => {
         }
 
         const handleAuction1 = () => {
-            setAuction(auction * val);
+            setAuction(auction * 3);
         }
         return (
             <BiddingData auction = {auction}  handleAuction =  {handleAuction} handleAuction1 ={handleAuction1} />
