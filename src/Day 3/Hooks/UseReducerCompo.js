@@ -24,7 +24,7 @@ function UseReducerCompo() {
     const [amount, setAmount] = useState(0);
 
     const handleDepo = () => {
-        dispatch({ type : "deposit", amount : parseInt(amount)})
+        dispatch({ type : "deposit", A : parseInt(amount)})
     }
 
     const handleWith = () => {

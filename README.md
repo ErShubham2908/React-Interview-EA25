@@ -235,3 +235,6 @@ const [count, setCount] = useState(0);
 |useEffect is used for managing side effects within a component. | useContext is used for consuming context data provided by a parent component.|
 |useEffect takes two arguments: a function with side effects and an array of dependencies to control when the effect runs. | useContext takes a single argument, the Context object, and returns the current context value.|
 |useEffect is primarily used for managing asynchronous operations and side effects. | useContext is used for sharing data (such as global state) across components.|
+
+## Day - 5
+
