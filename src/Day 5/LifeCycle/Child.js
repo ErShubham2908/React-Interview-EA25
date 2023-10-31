@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 class Child extends Component {
+    // Updating phase
     componentDidUpdate (prevProps, prevState){
         // console.log(prevProps.data);
         // console.log(this.props.data);
@@ -8,7 +9,6 @@ class Child extends Component {
             // 0 !== 1
             console.log('State is Updated in Parent...');
         }
-
     }
   render() {
     return (

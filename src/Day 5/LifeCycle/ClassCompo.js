@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Child from './Child';
 
 class ClassCompo extends Component {
-    // Constructor
+    // Mounting Phase
     constructor(){
         super();
         console.log('1. This is constructor... ');
