@@ -274,3 +274,31 @@ const [count, setCount] = useState(0);
 
 - **this** 
   - The this keyword in React refers to the current instance of a component class. It allows you to access the component's props, state, and methods within its class definition.
+
+### Q3. What is memory leak and how to overcome?
+- A memory leak is a type of resource leak that occurs when a computer program incorrectly manages memory allocations in a way that memory that is no longer needed is not released. This can lead to performance issues, as the application's memory footprint continuously increases over time.
+- **Causes of memory leaks in React**
+  - **Event listeners:** If you attach event listeners to elements within your React components, but fail to remove them when the component unmounts, it can lead to memory leaks. This is because the event listeners will continue to hold a reference to the component, preventing it from being garbage collected.
+  - **Subscription-based APIs:** If you're using subscription-based APIs, such as WebSocket connections or observables, it's crucial to unsubscribe or close these subscriptions when they're no longer needed. Otherwise, the subscriptions will continue to hold a reference to the component, preventing it from being garbage collected.
+  - **Closures:** Closures can also lead to memory leaks if they are not properly managed. For example, if you create a closure that contains a reference to a component, and then that closure is stored outside of the component's lifecycle, the component will not be able to be garbage collected.
+- **How to overcome memory leaks in React**
+  - **Always remove event listeners when components unmount:** You can do this in the componentWillUnmount lifecycle method for class components, or in the cleanup function returned by the useEffect hook for function components.
+  - **Always unsubscribe from subscription-based APIs when they're no longer needed:** You can do this by calling the unsubscribe() method on the subscription object.
+  - **Be careful with closures:** Make sure that closures that contain references to components are only stored within the component's lifecycle.
+
+- some additional tips for preventing memory leaks in react.
+  - Use the useEffect hook to manage cleanup logic.
+  - Use React.createRef() to create refs to DOM elements and other objects.
+  - Use the React.memo() function to memoize components, which can help to avoid re-rendering components that don't need to be re-rendered.
+  - Use a memory profiling tool to identify and fix memory leaks.
+
+### Q4. Do you know about redux?
+- Redux is a state management library often used with React, although it can be used with other JavaScript frameworks or libraries as well. It helps you manage the state of your application in a predictable and centralized way. I'll provide you with detailed notes and runnable examples to help you understand Redux better.
+- Redux stores the state of your application in a single object tree. The state tree is immutable, meaning that it cannot be changed directly. Instead, changes to the state tree are made by dispatching actions. Actions are plain JavaScript objects that describe what happened in your application.
+- When an action is dispatched, a reducer function is called to calculate the new state of the application. Reducer functions are pure functions, meaning that they always return the same output for the same input. This ensures that the state tree is always consistent.
+
+- **Redux Basics**
+  - **Store:** The store holds the current state of your application. You can think of it as a JavaScript object that contains all the data you need for your app.
+  - **Actions:** Actions are plain JavaScript objects that describe the type of change you want to make to your state. For example, you might have an action like ADD_TODO to add a new to-do item.
+  - **Reducers:** Reducers are pure functions that specify how the application's state changes in response to actions. They take the current state and an action as parameters and return the new state.
+  - **Dispatch:** To update the state, you dispatch actions to the store using store.dispatch(action). This triggers a state change.
