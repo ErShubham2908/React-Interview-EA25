@@ -333,3 +333,60 @@ const [count, setCount] = useState(0);
     - need to export actions from reducer
     - need to export reducer
   - UI
+ 
+### Q2. Why do we use redux thunk?
+- Redux Thunk is a middleware for the Redux library, which is used in JavaScript applications to manage the state of the application. It allows you to write asynchronous logic in Redux actions, making it possible to handle complex data flows, such as API requests, in a more organized and predictable manner.
+  - Why we use Redux Thunk - 
+    - Redux itself is designed for handling synchronous actions. However, in many real-world applications, you often need to deal with **asynchronous actions** like making network requests, fetching data, or handling complex side effects. Redux Thunk addresses this by allowing you to dispatch asynchronous actions, providing a smoother and more maintainable way to manage your application's state.
+  - **Benefits of using Redux Thunk:**
+    - **Asynchronous Actions:** Redux Thunk enables you to dispatch actions that are asynchronous in nature. For example, it's often used to make API requests, wait for the response, and then dispatch another action with the data.
+    - **Simplified Logic:** It helps in centralizing and simplifying the logic for handling side effects and asynchronous operations. Without Redux Thunk, you might end up with complex and scattered asynchronous code throughout your application.
+    - **Predictable State Updates:** Redux enforces a strict unidirectional data flow, ensuring that your application's state remains predictable and easy to debug, even with asynchronous operations.
+    - **Middleware:** Redux Thunk is a middleware, which means it sits between the action dispatch and the reducer. This allows you to intervene in the dispatch process, making it easier to handle asynchronous operations and side effects.
+
+```javascript
+// actions.js
+import axios from 'axios';
+
+export const fetchTodos = () => {
+  return async (dispatch) => {
+    dispatch({ type: 'FETCH_TODOS_REQUEST' });
+    
+    try {
+      const response = await axios.get('https://api.example.com/todos');
+      dispatch({
+        type: 'FETCH_TODOS_SUCCESS',
+        payload: response.data,
+      });
+    } catch (error) {
+      dispatch({
+        type: 'FETCH_TODOS_FAILURE',
+        payload: error.message,
+      });
+    }
+  };
+};
+
+// reducer.js
+const initialState = {
+  todos: [],
+  loading: false,
+  error: null,
+};
+
+const todosReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case 'FETCH_TODOS_REQUEST':
+      return { ...state, loading: true };
+    case 'FETCH_TODOS_SUCCESS':
+      return { ...state, loading: false, todos: action.payload };
+    case 'FETCH_TODOS_FAILURE':
+      return { ...state, loading: false, error: action.payload };
+    default:
+      return state;
+  }
+};
+
+export default todosReducer;
+
+```
