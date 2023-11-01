@@ -302,3 +302,34 @@ const [count, setCount] = useState(0);
   - **Actions:** Actions are plain JavaScript objects that describe the type of change you want to make to your state. For example, you might have an action like ADD_TODO to add a new to-do item.
   - **Reducers:** Reducers are pure functions that specify how the application's state changes in response to actions. They take the current state and an action as parameters and return the new state.
   - **Dispatch:** To update the state, you dispatch actions to the store using store.dispatch(action). This triggers a state change.
+
+## Day - 6
+
+### Q1. Explain reducer as pure function in redux?
+
+- Reducer is a pure function in Redux that determines changes to the application state. Reducers in Redux are required to follow specific rules and patterns, such as:
+  1. **Reducers must be pure functions:** They should not produce side effects and should not depend on the state or actions of the outside world. The same input should always produce the same output.
+  2. **Reducers should not mutate the state:** They should return a new state every time an action is dispatched. Instead of directly modifying the existing state, they should use the spread operator or Object.assign to create a new state.
+  3. **Reducers should be modular:** Each reducer should handle a specific part of the application state. This helps in managing complex state structures and makes the code more maintainable.
+  4. **Reducers should not call action creators or dispatch actions:** They should only calculate the new state based on the current state and the action being dispatched. Dispatching actions should be done by middleware or in response to a UI event.
+
+### Step to implement Redux Toolkit
+
+- **Folder Structure**
+  - Store
+    - configureStore - imported from @reduxjs/toolkit
+    - export store
+    - need to create a reducer in store
+    - need to create a global store in index.js using provider.
+  - Slice
+    - createSlice - imported from @reduxjs/toolkit.
+    - Slice take three key
+      - name
+      - initialState,
+        - intial value of your store
+      - reducers
+      - function - have information of state and action
+      - need to write logic for state (depend upon action)
+    - need to export actions from reducer
+    - need to export reducer
+  - UI

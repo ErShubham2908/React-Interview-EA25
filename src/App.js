@@ -16,6 +16,7 @@ import UseReducerCompo from './Day 3/Hooks/UseReducerCompo';
 import Opponent2 from './Day 5/HOC/Oppeoent2';
 import Opponent1 from './Day 5/HOC/Opponent1';
 import ClassCompo from './Day 5/LifeCycle/ClassCompo';
+import Ui from './Day 6/Redux/CounterUi/Ui';
 
 function App() {
   const [data, setData] = useState('Hi....')
@@ -38,7 +39,8 @@ function App() {
       {/* <UseReducerCompo /> */}
       {/* <Opponent2 /> */}
       {/* <Opponent1 /> */}
-      <ClassCompo />
+      {/* <ClassCompo /> */}
+      <Ui />
     </div>
   );
 }
