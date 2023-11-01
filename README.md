@@ -390,3 +390,14 @@ const todosReducer = (state = initialState, action) => {
 export default todosReducer;
 
 ```
+
+### Q7. Redux Saga?
+- Redux Saga is a middleware library for managing side effects in Redux applications. It is commonly used with Redux to handle asynchronous actions and complex workflows in a more organized and efficient manner. In this note, we'll explore the reasons for using Redux Saga and provide examples to illustrate its usage.
+- **Benefits of using Redux Saga:**
+  - Improved organization and readability: Sagas provide a clear and declarative way to write side effects, which can make your code more organized and readable.
+  - Easier testing: Sagas are easier to test than other approaches to handling side effects, such as callbacks or promises. This is because sagas can be executed in a controlled environment, and their state can be easily inspected and manipulated.
+  - Better error handling: Sagas can handle errors in a more robust and predictable way than other approaches. This is because sagas can be used to implement retry logic, cancellation logic, and other error handling strategies.
+- **Examples of using Redux Saga:**
+  - **Fetching data from an API:** A saga can be used to fetch data from an API and store it in the Redux store. The saga can also handle errors that occur during the fetch operation.
+  - **Handling user input:** A saga can be used to handle user input, such as form submissions or button clicks. The saga can then perform the necessary actions, such as updating the Redux store or dispatching other actions.
+  - **Implementing complex business logic:** A saga can be used to implement complex business logic, such as a shopping cart checkout process or a real-time chat application.

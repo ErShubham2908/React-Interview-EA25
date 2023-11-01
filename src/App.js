@@ -26,7 +26,7 @@ function App() {
       {/* <Counter /> */}
       {/* Day 2 */}
       {/* <Parent /> */}
-      {/* <RoutesCompo /> */}
+      <RoutesCompo />
       {/* <Compo /> */}
       {/* <CompoLazy value = {data} /> */}
       {/* <StateUp /> */}
@@ -40,7 +40,7 @@ function App() {
       {/* <Opponent2 /> */}
       {/* <Opponent1 /> */}
       {/* <ClassCompo /> */}
-      <Ui />
+      {/* <Ui /> */}
     </div>
   );
 }

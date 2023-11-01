@@ -16,9 +16,9 @@ function UseEffect() {
         console.log('Hi.......');
         console.log(mouseCod.x, mouseCod.y);
 
-        // return(()=> {
-        //     window.removeEventListener('mousemove', mouseMoving)
-        // })
+        return(()=> {
+            window.removeEventListener('mousemove', mouseMoving)
+        })
     },[mouseCod])
 
     // useEffect(() => {

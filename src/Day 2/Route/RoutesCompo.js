@@ -4,6 +4,7 @@ import Home from './Home'
 import Student from './Student'
 import Contact from './Contact'
 import About from './About'
+import Dynamic from './Dynamic'
 
 function RoutesCompo() {
   return (
@@ -21,9 +22,10 @@ function RoutesCompo() {
         <NavLink style={({isActive}) => console.log(isActive)} to='/contact'> | contact</NavLink>
         <Routes >
             <Route path='/' element={<Home />} />
-            <Route path='/student' element= {<Contact />} />
-            <Route path='/contact' element={<Student />} />
+            <Route path='/student' element= {<Student />} />
+            <Route path='/contact' element={<Contact />} />
             <Route path='/about' element={<About />} />
+            <Route path='/dynamic/:name' element= {<Dynamic />}/>
         </Routes>
     </>
   )
